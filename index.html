@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pantón · Bodegón gallego en Villa Urquiza</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://panton-bodegon.vercel.app/">
+<meta property="og:site_name" content="Pantón Bodegón">
+<meta property="og:title" content="Pantón Bodegón · Cocina gallega en Villa Urquiza">
+<meta property="og:description" content="La carta, reservas y pedidos a casa de Pantón, en Bucarelli y La Pampa. Todos los días de 7:00 a 01:00 hs.">
+<meta property="og:image" content="https://panton-bodegon.vercel.app/img/og.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Pantón, cocina de bodegón: el cartel encendido de la esquina de Bucarelli y La Pampa">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://panton-bodegon.vercel.app/img/og.jpg?v=1">
+<meta name="description" content="Pantón, cocina de bodegón gallega en Bucarelli 1801 esquina La Pampa (Villa Urquiza). Huevos rotos, tortilla, pesca del día, postres caseros y menú del día. Reservas y pedidos a casa. Todos los días de 7:00 a 01:00 hs.">
+<meta name="theme-color" content="#160E09">
+<link rel="canonical" href="https://panton-bodegon.vercel.app/">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/fell.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lora.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/cartel-1080.webp" as="image" media="(min-width: 900px)">
+<link rel="preload" href="img/cartel-800.webp" as="image" media="(max-width: 899px)">
+<script>
+  (function () {
+    var d = document.documentElement; d.classList.add('js');
+    try { if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !/[?&]sinintro/.test(location.search)) d.classList.add('con-intro'); } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="kit/kit.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Pantón Bodegón","servesCuisine":["Gallega","Española","Bodegón"],"address":{"@type":"PostalAddress","streetAddress":"Bucarelli 1801","addressLocality":"Villa Urquiza, CABA","addressCountry":"AR"},"telephone":"+54 9 11 3159-5666","acceptsReservations":"True","openingHours":"Mo-Su 07:00-01:00","sameAs":["https://www.instagram.com/bodegonpanton/"]}
+</script>
+</head>
+<body>
+
+<!-- ============ INTRO: se prende el cartel ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__ladrillo"></div>
+  <div class="intro__brillo"></div>
+  <div class="intro__centro">
+    <img class="intro__logo" src="img/logo-oro.svg" alt="" width="750" height="248">
+  </div>
+  <p class="intro__linea">Bucarelli 1801 · desde las 7:00 hs</p>
+</div>
+
+<a class="saltar" href="#main">Saltar al contenido</a>
+
+<!-- ============ BARRA ============ -->
+<header class="barra" id="barra">
+  <div class="barra__in">
+    <a class="barra__logo" href="#inicio" aria-label="Pantón, ir al inicio"><img data-logo-barra src="img/logo-oro.svg" alt="Pantón" width="750" height="248"></a>
+    <nav class="barra__nav" aria-label="Secciones">
+      <a href="#carta">Carta</a>
+      <a href="#menu-dia">Menú del día</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#historia">Historia</a>
+      <a href="#prensa">Prensa</a>
+      <a href="#donde">Cómo llegar</a>
+    </nav>
+    <div class="barra__acc">
+      <button type="button" class="barra__comanda" data-kit-open="carrito" aria-label="Ver tu comanda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span>Comanda</span><b data-comanda-n hidden>0</b></button>
+      <button type="button" class="btn btn--rojo barra__reservar" data-kit-open="reservas">Reservá</button>
+      <button type="button" class="barra__menu" data-menu aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__nav" aria-label="Menú">
+    <a href="#carta" style="--d:0">La carta</a>
+    <a href="#menu-dia" style="--d:1">Menú del día</a>
+    <a href="#mesa" style="--d:2">Armá la mesa</a>
+    <a href="#reservas" style="--d:3">Reservas</a>
+    <a href="#historia" style="--d:4">Historia</a>
+    <a href="#prensa" style="--d:5">Prensa y visitas</a>
+    <a href="#donde" style="--d:6">Cómo llegar</a>
+  </nav>
+  <div class="menu__pie">
+    <a class="menu__panel" href="admin/">Probá el panel del dueño →</a>
+    <span>Bucarelli 1801 esq. La Pampa · Villa Urquiza</span>
+    <span>Todos los días de 7:00 a 01:00 hs</span>
+    <a href="https://wa.me/5491131595666" target="_blank" rel="noopener">WhatsApp 11 3159-5666</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO A · EL CARTEL ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-t">
+  <figure class="hero__foto descubre" style="--d:0">
+    <picture>
+      <source media="(min-width: 900px)" srcset="img/cartel-1080.webp" width="1040" height="925">
+      <img src="img/cartel-800.webp" alt="La fachada de Pantón de noche: el cartel PANTÓN BODEGÓN bajo el balcón" width="800" height="712" fetchpriority="high" decoding="async">
+    </picture>
+  </figure>
+  <div class="hero__txt">
+    <p class="estado entra" data-estado style="--d:0">Abierto todos los días de 7:00 a 01:00 hs</p>
+    <h1 class="hero__t" id="hero-t"><span class="linea"><span>Cocina gallega</span></span> <span class="linea"><span>de bodegón</span></span></h1>
+    <p class="hero__sub entra" style="--d:2"><span class="solo-celu">Porciones para compartir en la esquina de Bucarelli y La Pampa.</span><span class="solo-desk">Tortilla, huevos rotos, pesca del día y postres caseros, en porciones para compartir. Un homenaje a Pantón, el pueblo de la Ribeira Sacra de donde vino la familia.</span></p>
+    <div class="hero__cta entra" style="--d:3">
+      <button type="button" class="btn btn--rojo btn--grande" data-kit-open="reservas">Reservá tu mesa</button>
+      <a class="btn btn--linea-oro btn--grande" href="#carta">Pedí a casa</a>
+    </div>
+    <p class="hero__prensa entra" style="--d:4"><span>Salió en</span> <b>Clarín</b> · <b>Canal 26</b> · <b>C5N</b> · <b>LN+</b></p>
+  </div>
+  <span class="hero__dire">Bucarelli 1801 · Villa Urquiza</span>
+</section>
+
+<!-- ============ EL RELOJ DE PANTÓN ============ -->
+<section class="seccion reloj" id="momentos" aria-labelledby="reloj-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker kicker--oro reveal">De 7:00 a 01:00 hs, todos los días</p>
+        <h2 class="titulo" id="reloj-t"><span class="linea"><span>Pasá a</span></span> <span class="linea"><span>cualquier hora</span></span></h2>
+      </div>
+      <p class="cabecera__sub reveal">Pantón abre con el café y cierra con la sobremesa. <span class="solo-mouse">Arrastrá la aguja</span><span class="solo-dedo">Tocá cada momento</span> para ver qué te espera.</p>
+    </div>
+
+    <div class="reloj__linea reveal" data-reloj-linea>
+      <div class="reloj__pista" data-reloj-pista>
+        <button type="button" class="reloj__tramo" data-momento="desayuno" style="--w:5"><b>Desayuno</b><span>7:00 a 12:00 hs</span></button>
+        <button type="button" class="reloj__tramo" data-momento="mediodia" style="--w:4"><b>Mediodía</b><span>12:00 a 16:00 hs</span></button>
+        <button type="button" class="reloj__tramo" data-momento="merienda" style="--w:4"><b>Merienda</b><span>16:00 a 20:00 hs</span></button>
+        <button type="button" class="reloj__tramo" data-momento="cena" style="--w:5"><b>Cena</b><span>20:00 a 01:00 hs</span></button>
+        <span class="reloj__aguja" data-reloj-aguja aria-hidden="true"><i></i></span>
+      </div>
+      <div class="reloj__horas" aria-hidden="true"><span>7:00</span><span>12:00</span><span>16:00</span><span>20:00</span><span>01:00</span></div>
+    </div>
+
+    <div class="momento" data-momento-card aria-live="polite">
+      <figure class="momento__foto"><img data-momento-img src="img/salon-alto-1100.webp" alt="" width="1100" height="1134" loading="lazy" decoding="async"></figure>
+      <div class="momento__txt">
+        <p class="momento__k" data-momento-k>Ahora en Pantón</p>
+        <h3 class="momento__t" data-momento-t>Cena</h3>
+        <p class="momento__d" data-momento-d>Cazuelas al centro, vino y sobremesa larga.</p>
+        <div class="momento__acc" data-momento-acc></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA CARTA ============ -->
+<section class="seccion carta" id="carta" aria-labelledby="carta-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker reveal">Cocina de bodegón</p>
+        <h2 class="titulo" id="carta-t"><span class="linea"><span>La carta</span></span></h2>
+      </div>
+      <div class="carta__cab-der reveal">
+        <p class="cabecera__sub">Pedí a casa o pasá a buscar: armás la comanda acá y te llega armada al WhatsApp del bodegón. La misma carta está en el QR de las mesas.</p>
+        <a class="carta__qr" href="carta/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 17h4v4"/></svg>Abrir la carta del QR</a>
+      </div>
+    </div>
+    <div data-kit="carta" hidden></div>
+    <div class="carta__cuerpo" data-carta-cuerpo>
+      <p class="carta__cargando">Cargando la carta…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENÚ DEL DÍA (pizarrón) ============ -->
+<section class="seccion menudia" id="menu-dia" aria-labelledby="menudia-t">
+  <div class="contenedor menudia__in">
+    <div class="pizarron reveal">
+      <div class="pizarron__dias" data-dias aria-label="Días del menú del día"></div>
+      <h2 class="pizarron__t" id="menudia-t">Menú del día</h2>
+      <p class="pizarron__sub">De lunes a viernes al mediodía</p>
+      <ul class="pizarron__lista" data-menudia></ul>
+    </div>
+    <div class="menudia__txt">
+      <p class="kicker kicker--oro reveal">El plan del mediodía</p>
+      <h2 class="titulo titulo--chico"><span class="linea"><span>Almorzá como</span></span> <span class="linea"><span>en casa</span></span></h2>
+      <p class="cabecera__sub reveal">El plato del día cambia y Pantón lo carga desde su panel: lo que ves acá es lo que sale hoy. Reservá la mesa o pedilo para pasar a buscar.</p>
+      <div class="menudia__acc reveal">
+        <button type="button" class="btn btn--rojo btn--grande" data-reservar-mediodia>Reservá para el mediodía</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARMÁ LA MESA (WOW) ============ -->
+<section class="seccion mesa" id="mesa" aria-labelledby="mesa-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker reveal">Platos para compartir</p>
+        <h2 class="titulo" id="mesa-t"><span class="linea"><span>Armá la mesa</span></span></h2>
+      </div>
+      <p class="cabecera__sub reveal"><span class="solo-mouse">Arrastrá las cazuelas al mantel</span><span class="solo-dedo">Tocá «A la mesa» en cada cazuela</span> y armá la comanda para compartir. Cuando esté lista, pedila a casa o reservá y comela acá.</p>
+    </div>
+    <div class="mesa__in">
+      <ul class="cazuelas" data-cazuelas data-arrastre></ul>
+      <div class="mantel reveal" data-mantel>
+        <img class="mantel__logo" src="img/logo.svg" alt="" width="750" height="248">
+        <div class="mantel__platos" data-mantel-platos></div>
+        <p class="mantel__vacio" data-mantel-vacio>El mantel está listo. <span class="solo-mouse">Soltá acá las cazuelas.</span><span class="solo-dedo">Sumá cazuelas con «A la mesa».</span></p>
+        <div class="mantel__pie">
+          <p class="mantel__n" data-mantel-n>0 platos para el centro</p>
+          <div class="mantel__acc">
+            <button type="button" class="btn btn--rojo" data-kit-open="carrito">Pedir esta mesa</button>
+            <button type="button" class="btn btn--linea" data-kit-open="reservas">Reservar y comerla acá</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVAS ============ -->
+<section class="seccion reservas" id="reservas" aria-labelledby="reservas-t">
+  <div class="reservas__foto descubre"><img src="img/salon-alto-1100.webp" srcset="img/salon-alto-600.webp 600w, img/salon-alto-1100.webp 1100w" sizes="(min-width: 900px) 50vw, 100vw" alt="El salón de Pantón con la palabra PANTÓN en el ladrillo" width="1100" height="1134" loading="lazy" decoding="async"></div>
+  <div class="contenedor reservas__in">
+    <div class="reservas__txt">
+      <p class="kicker kicker--oro reveal">Mesas largas, festejos y sobremesa</p>
+      <h2 class="titulo" id="reservas-t"><span class="linea"><span>Reservá</span></span> <span class="linea"><span>tu mesa</span></span></h2>
+      <p class="cabecera__sub reveal">Elegí día, horario y cuántos son. Pantón la ve al instante en su panel y te confirma por WhatsApp, sin esperar a que alguien conteste el teléfono.</p>
+      <ul class="reservas__datos reveal">
+        <li><b>Almuerzo</b><span>12:00 a 14:30 hs</span></li>
+        <li><b>Cena</b><span>20:00 a 23:00 hs</span></li>
+        <li><b>Grupos</b><span>hasta 20 personas por la web</span></li>
+      </ul>
+    </div>
+    <div class="reservas__form reveal" data-kit="reservas"></div>
+  </div>
+</section>
+
+<!-- ============ PEDÍ A CASA ============ -->
+<section class="seccion casa" id="delivery" aria-labelledby="casa-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker reveal">Delivery propio y para llevar</p>
+        <h2 class="titulo" id="casa-t"><span class="linea"><span>Pantón</span></span> <span class="linea"><span>en tu casa</span></span></h2>
+      </div>
+      <p class="cabecera__sub reveal">El mismo WhatsApp de siempre, pero con la comanda armada: sin dictar platos ni repetir la dirección.</p>
+    </div>
+    <ol class="pasos">
+      <li class="paso reveal" style="--d:0"><span class="paso__n">1</span><h3>Armás la comanda</h3><p>Elegís de la carta o del mantel, con cantidades y aclaraciones.</p></li>
+      <li class="paso reveal" style="--d:1"><span class="paso__n">2</span><h3>Llega armada al WhatsApp</h3><p>Pantón recibe el pedido con tu nombre, la dirección y si pasás a buscar.</p></li>
+      <li class="paso reveal" style="--d:2"><span class="paso__n">3</span><h3>Te confirman y sale</h3><p>Te escriben con el precio, el envío según tu zona y la demora.</p></li>
+    </ol>
+    <div class="casa__acc reveal">
+      <a class="btn btn--rojo btn--grande" href="#carta">Armar mi comanda</a>
+      <a class="btn btn--linea btn--grande" href="https://wa.me/5491131595666" target="_blank" rel="noopener">Consultar la zona de envío</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTORIA · DE PANTÓN A URQUIZA ============ -->
+<section class="seccion historia" id="historia" aria-labelledby="historia-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker kicker--oro reveal">Un homenaje a nuestro origen</p>
+        <h2 class="titulo" id="historia-t"><span class="linea"><span>De Pantón</span></span> <span class="linea"><span>a Villa Urquiza</span></span></h2>
+      </div>
+      <p class="cabecera__sub reveal">Pantón es un pueblo de la Ribeira Sacra, en Lugo (Galicia), donde nacieron la madre y los abuelos de la familia. <span class="solo-mouse">Pasá el mouse</span><span class="solo-dedo">Tocá</span> cada punto del camino.</p>
+    </div>
+    <div class="ruta reveal" data-ruta>
+      <svg class="ruta__svg" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true">
+        <path class="ruta__mar" d="M120 150 C 330 20, 560 40, 700 170 S 900 360, 900 300"/>
+        <path class="ruta__trazo" d="M120 150 C 330 20, 560 40, 700 170 S 900 360, 900 300"/>
+      </svg>
+      <svg class="ruta__svg ruta__svg--v" viewBox="0 0 400 1000" preserveAspectRatio="none" aria-hidden="true">
+        <path class="ruta__mar" d="M120 60 C 330 220, 60 380, 200 520 S 330 820, 260 940"/>
+        <path class="ruta__trazo" d="M120 60 C 330 220, 60 380, 200 520 S 330 820, 260 940"/>
+      </svg>
+      <span class="ruta__region ruta__region--a" aria-hidden="true">Galicia</span><span class="ruta__region ruta__region--b" aria-hidden="true">Buenos Aires</span>
+      <button type="button" class="punto" data-t="0" aria-expanded="false"><i></i><span class="punto__n">Pantón · Lugo</span><span class="punto__info">«A vila dos tres ríos de Galicia»: el Sil, el Miño y el Cabe. Ahí nacieron la madre y los abuelos de la familia.</span></button>
+      <button type="button" class="punto" data-t=".2" aria-expanded="false"><i></i><span class="punto__n">Ribeira Sacra</span><span class="punto__info">Viñedos en terrazas, monasterios medievales y el vino Mencía. Candidata a Patrimonio Mundial.</span></button>
+      <button type="button" class="punto" data-t=".44" aria-expanded="false"><i></i><span class="punto__n">Camino de Santiago</span><span class="punto__info">La zona es parte del Camino de Santiago: por eso en la carta hay tarta de Santiago.</span></button>
+      <button type="button" class="punto" data-t=".7" aria-expanded="false"><i></i><span class="punto__n">El Atlántico</span><span class="punto__info">Como tantos gallegos, la familia cruzó a Buenos Aires con sus mesas largas de amigos.</span></button>
+      <button type="button" class="punto punto--fin" data-t="1" aria-expanded="false"><i></i><span class="punto__n">Bucarelli y La Pampa</span><span class="punto__info">Mayo de 2024: abre Pantón en la esquina de Villa Urquiza, con la palabra PANTÓN en el ladrillo.</span></button>
+    </div>
+    <div class="historia__cita">
+      <blockquote class="reveal">
+        <p lang="gl">«Queremos recrear aquí parte desas experiencias de mesas con amigos e familiares con boa comida e regadas con bo viño e o espírito galego de hospitalidade e alegría.»</p>
+        <p class="historia__trad">Queremos recrear acá esas mesas con amigos y familia, con buena comida, buen vino y el espíritu gallego de hospitalidad y alegría.</p>
+      </blockquote>
+      <figure class="historia__foto descubre"><img src="img/ladrillo-600.webp" srcset="img/ladrillo-600.webp 600w, img/ladrillo-1100.webp 1100w" sizes="(min-width: 900px) 420px, 90vw" alt="La palabra PANTÓN escrita en la pared de ladrillo del salón" width="600" height="748" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRENSA ============ -->
+<section class="seccion prensa" id="prensa" aria-labelledby="prensa-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker reveal">Lo que se dijo de Pantón</p>
+        <h2 class="titulo" id="prensa-t"><span class="linea"><span>Salió en</span></span> <span class="linea"><span>los diarios</span></span></h2>
+      </div>
+      <p class="cabecera__sub reveal">En poco más de un año, el bodegón de la esquina pasó por los diarios y la tele. <span class="solo-mouse">Pasá el mouse por cada recorte.</span><span class="solo-dedo">Deslizá los recortes.</span></p>
+    </div>
+  </div>
+  <ul class="recortes" data-arrastre>
+    <li class="recorte reveal" style="--r:-2.5deg;--d:0"><span class="recorte__medio">Clarín</span><h3 class="recorte__t">La revancha de los bodegones: los restoranes que son la «resistencia» en tiempos de crisis para salir a comer afuera</h3><p class="recorte__b">Porciones para compartir y precios más bajos.</p><a class="recorte__link" href="https://www.instagram.com/p/DW0FTYhDTfx/" target="_blank" rel="noopener">Ver la nota</a></li>
+    <li class="recorte reveal" style="--r:2deg;--d:1"><span class="recorte__medio">Canal 26</span><h3 class="recorte__t">Queda en Villa Urquiza: el bodegón que honra la tradición de Galicia ofreciendo una experiencia familiar y accesible</h3><p class="recorte__b">«La tradición gallega se fusiona con el espíritu del bodegón porteño a precio amigo.» · 5 de septiembre de 2025</p><a class="recorte__link" href="https://www.instagram.com/p/DOUiw4qCSON/" target="_blank" rel="noopener">Ver la nota</a></li>
+    <li class="recorte recorte--tv reveal" style="--r:-1deg;--d:2"><span class="recorte__medio">C5N</span><h3 class="recorte__t">Nota en el bodegón: porciones abundantes y la mejor calidad</h3><a class="recorte__link" href="https://www.instagram.com/p/DMIo4gvMWIt/" target="_blank" rel="noopener">Ver el video</a></li>
+    <li class="recorte recorte--tv reveal" style="--r:1.5deg;--d:3"><span class="recorte__medio">Canal de la Ciudad</span><h3 class="recorte__t">Visita y nota en Pantón, el bodegón de Villa Urquiza</h3><a class="recorte__link" href="https://www.instagram.com/p/DMRFuzSsxad/" target="_blank" rel="noopener">Ver el video</a></li>
+    <li class="recorte recorte--tv reveal" style="--r:-2deg;--d:4"><span class="recorte__medio">LN+</span><h3 class="recorte__t">Horacio Cabak y su equipo, de visita en el bodegón gallego por el Día del Padre</h3><a class="recorte__link" href="https://www.instagram.com/p/C8SCyWksNCT/" target="_blank" rel="noopener">Ver el video</a></li>
+  </ul>
+</section>
+
+<!-- ============ LIBRO DE VISITAS ============ -->
+<section class="seccion visitas" id="visitas" aria-labelledby="visitas-t">
+  <div class="contenedor visitas__in">
+    <div class="visitas__txt">
+      <p class="kicker kicker--oro reveal">Libro de visitas</p>
+      <h2 class="titulo" id="visitas-t"><span class="linea"><span>Firmaron</span></span> <span class="linea"><span>en Pantón</span></span></h2>
+      <p class="cabecera__sub reveal">Actores, periodistas, ídolos del fútbol y vecinos de siempre. Cada firma lleva a la foto de su visita en el Instagram del bodegón.</p>
+    </div>
+    <div class="libro reveal" data-libro>
+      <div class="libro__hoja">
+        <p class="libro__cab">Pantón · Villa Urquiza</p>
+        <ul class="firmas">
+          <li><a href="https://www.instagram.com/p/DSc_IrTiZh8/" target="_blank" rel="noopener" class="firma f1">Martín Bossi</a><span>artista</span></li>
+          <li><a href="https://www.instagram.com/p/DKiLvl_yDvv/" target="_blank" rel="noopener" class="firma f2">Marcelo Subiotto</a><span>actor</span></li>
+          <li><a href="https://www.instagram.com/p/DGmQTOrtbbG/" target="_blank" rel="noopener" class="firma f1">Carlos Babington</a><span>ídolo de Huracán</span></li>
+          <li><a href="https://www.instagram.com/p/DIr812qMfMq/" target="_blank" rel="noopener" class="firma f2">Karin Cohen</a><span>periodista</span></li>
+          <li><a href="https://www.instagram.com/p/DENdzl1PSov/" target="_blank" rel="noopener" class="firma f1">Walter Nelson</a><span>periodista y relator</span></li>
+          <li><a href="https://www.instagram.com/p/DEPrXmXRul9/" target="_blank" rel="noopener" class="firma f2">Caruso Lombardi</a><span>vecino de Urquiza</span></li>
+        </ul>
+      </div>
+      <div class="libro__hoja libro__hoja--der">
+        <ul class="firmas">
+          <li><a href="https://www.instagram.com/p/DCNHeu_SDQZ/" target="_blank" rel="noopener" class="firma f2">Pancho Ferraro</a><span>director técnico</span></li>
+          <li><a href="https://www.instagram.com/p/DATkARuvxYc/" target="_blank" rel="noopener" class="firma f1">Bocha Batista</a><span>DT de Venezuela</span></li>
+          <li><a href="https://www.instagram.com/p/C7ZbvzcA1ap/" target="_blank" rel="noopener" class="firma f2">Darío Lopilato</a><span>actor</span></li>
+          <li><a href="https://www.instagram.com/p/C7ZcSEjA6qQ/" target="_blank" rel="noopener" class="firma f1">Gabriel Calderón</a><span>ex Selección</span></li>
+          <li><a href="https://www.instagram.com/p/C7-vj2qtOkA/" target="_blank" rel="noopener" class="firma f2">Beto Carranza</a><span>ex San Lorenzo</span></li>
+          <li><a href="https://www.instagram.com/p/C8SCyWksNCT/" target="_blank" rel="noopener" class="firma f1">Horacio Cabak</a><span>LN+</span></li>
+        </ul>
+        <p class="libro__pie">… y los vecinos que vuelven cada semana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="seccion salon" id="salon" aria-labelledby="salon-t">
+  <div class="contenedor">
+    <div class="cabecera cabecera--fila">
+      <div>
+        <p class="kicker reveal">Ladrillo, cazuelas y mesas largas</p>
+        <h2 class="titulo" id="salon-t"><span class="linea"><span>Así se ve</span></span> <span class="linea"><span>un sábado</span></span></h2>
+      </div>
+      <p class="cabecera__sub reveal"><span class="solo-dedo">Pasá las fotos con el dedo.</span><span class="solo-mouse">Arrastrá la fila para ver más.</span></p>
+    </div>
+  </div>
+  <div class="galeria" data-galeria>
+    <figure class="g g--arco"><img src="img/salon-alto-600.webp" alt="El salón de Pantón visto desde arriba, con las letras en el ladrillo" width="600" height="619" loading="lazy" decoding="async"></figure>
+    <figure class="g"><img src="img/filloas-fuego-600.webp" alt="Filloas flambeadas en la mesa" width="600" height="750" loading="lazy" decoding="async"></figure>
+    <figure class="g g--redonda"><img src="img/mesa-600.webp" alt="Una mesa con vino, pan y papas" width="600" height="600" loading="lazy" decoding="async"></figure>
+    <figure class="g"><img src="img/salon-dia-600.webp" alt="El salón de Pantón al mediodía, con la palabra PANTÓN en el ladrillo" width="640" height="1138" loading="lazy" decoding="async"></figure>
+    <figure class="g g--arco"><img src="img/cervezas-600.webp" alt="Un mozo sirve una jarra de cerveza" width="600" height="750" loading="lazy" decoding="async"></figure>
+    <figure class="g"><img src="img/pasarela-600.webp" alt="La pasarela del entrepiso del salón" width="600" height="461" loading="lazy" decoding="async"></figure>
+    <figure class="g g--redonda"><img src="img/brindis-600.webp" alt="Copas de espumante para brindar" width="600" height="750" loading="lazy" decoding="async"></figure>
+    <figure class="g"><img src="img/rosas-600.webp" alt="Rosas sobre la barra frente a la pared con PANTÓN" width="600" height="800" loading="lazy" decoding="async"></figure>
+  </div>
+</section>
+
+<!-- ============ CÓMO LLEGAR ============ -->
+<section class="seccion donde" id="donde" aria-labelledby="donde-t">
+  <div class="contenedor donde__in">
+    <div>
+      <p class="kicker kicker--oro reveal">La esquina de Pampa y Bucarelli</p>
+      <h2 class="titulo" id="donde-t"><span class="linea"><span>Cómo</span></span> <span class="linea"><span>llegar</span></span></h2>
+      <p class="donde__dire reveal"><b>Bucarelli 1801, esquina La Pampa</b><br>Villa Urquiza, en el límite con Parque Chas.</p>
+      <p class="donde__estado reveal" data-donde-estado>Abierto todos los días</p>
+      <ul class="horarios reveal" data-horarios></ul>
+      <div class="donde__btns reveal">
+        <a class="btn btn--rojo" href="https://www.google.com/maps/search/?api=1&amp;query=Bucarelli+1801,+Villa+Urquiza,+Buenos+Aires" target="_blank" rel="noopener">Abrir en Maps</a>
+        <a class="btn btn--linea-oro" href="https://wa.me/5491131595666" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--linea-oro" href="https://www.instagram.com/bodegonpanton/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="donde__tel reveal">Reservas y delivery: <a href="tel:+5491131595666">11 3159-5666</a></p>
+      <a class="panel-cta" href="admin/">¿Sos de Pantón? Probá el panel del dueño <b>→</b></a>
+    </div>
+    <div class="donde__mapa reveal">
+      <figure class="donde__cartel descubre"><img src="img/fachada-noche-640.webp" alt="La fachada de Pantón de noche, con el cartel encendido y las mesas en la vereda" width="640" height="1138" loading="lazy" decoding="async"></figure>
+      <div class="mapa"><iframe data-src="https://maps.google.com/maps?q=Bucarelli%201801%2C%20Villa%20Urquiza%2C%20Buenos%20Aires&amp;z=16&amp;output=embed" title="Mapa: Bucarelli 1801, Villa Urquiza" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__in">
+    <div class="pie__marca"><img src="img/logo-oro.svg" alt="Pantón, cocina de bodegón" width="750" height="248"></div>
+    <nav class="pie__nav" aria-label="Pie">
+      <a href="#carta">Carta</a><a href="carta/">Carta del QR</a><a href="#reservas">Reservas</a><a href="#historia">Historia</a><a href="#prensa">Prensa</a><a href="admin/">Panel</a>
+    </nav>
+    <div class="pie__datos">
+      <span>Bucarelli 1801 · Villa Urquiza</span>
+      <span>Todos los días de 7:00 a 01:00 hs</span>
+      <a href="https://wa.me/5491131595666" target="_blank" rel="noopener">11 3159-5666</a>
+      <a href="https://www.instagram.com/bodegonpanton/" target="_blank" rel="noopener">@bodegonpanton</a>
+    </div>
+  </div>
+  <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
+</footer>
+
+<script type="module" src="js/app.js?v=1"></script>
+</body>
+</html>
