@@ -24,8 +24,8 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preload" href="fonts/fell.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/lora.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/cartel-1080.webp" as="image" media="(min-width: 900px)">
-<link rel="preload" href="img/cartel-800.webp" as="image" media="(max-width: 899px)">
+<link rel="preload" href="img/hero-1440.webp" as="image" media="(min-width: 900px)">
+<link rel="preload" href="img/hero-800.webp" as="image" media="(max-width: 899px)">
 <script>
   (function () {
     var d = document.documentElement; d.classList.add('js');
@@ -33,7 +33,7 @@
   })();
 </script>
 <link rel="stylesheet" href="kit/kit.css?v=1">
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Pantón Bodegón","servesCuisine":["Gallega","Española","Bodegón"],"address":{"@type":"PostalAddress","streetAddress":"Bucarelli 1801","addressLocality":"Villa Urquiza, CABA","addressCountry":"AR"},"telephone":"+54 9 11 3159-5666","acceptsReservations":"True","openingHours":"Mo-Su 07:00-01:00","sameAs":["https://www.instagram.com/bodegonpanton/"]}
 </script>
@@ -96,8 +96,8 @@
 <section class="hero" id="inicio" aria-labelledby="hero-t">
   <figure class="hero__foto descubre" style="--d:0">
     <picture>
-      <source media="(min-width: 900px)" srcset="img/cartel-1080.webp" width="1040" height="925">
-      <img src="img/cartel-800.webp" alt="La fachada de Pantón de noche: el cartel PANTÓN BODEGÓN bajo el balcón" width="800" height="712" fetchpriority="high" decoding="async">
+      <source media="(min-width: 900px)" srcset="img/hero-1440.webp" width="1440" height="1794">
+      <img src="img/hero-800.webp" srcset="img/hero-800.webp 800w, img/hero-1440.webp 1440w" sizes="100vw" alt="La pared de ladrillo del salón con la palabra PANTÓN y una mesa larga puesta" width="800" height="997" fetchpriority="high" decoding="async">
     </picture>
   </figure>
   <div class="hero__txt">
@@ -286,7 +286,7 @@
         <p lang="gl">«Queremos recrear aquí parte desas experiencias de mesas con amigos e familiares con boa comida e regadas con bo viño e o espírito galego de hospitalidade e alegría.»</p>
         <p class="historia__trad">Queremos recrear acá esas mesas con amigos y familia, con buena comida, buen vino y el espíritu gallego de hospitalidad y alegría.</p>
       </blockquote>
-      <figure class="historia__foto descubre"><img src="img/ladrillo-600.webp" srcset="img/ladrillo-600.webp 600w, img/ladrillo-1100.webp 1100w" sizes="(min-width: 900px) 420px, 90vw" alt="La palabra PANTÓN escrita en la pared de ladrillo del salón" width="600" height="748" loading="lazy" decoding="async"></figure>
+      <figure class="historia__foto descubre"><img src="img/rosas-600.webp" srcset="img/rosas-600.webp 600w, img/rosas-1100.webp 1100w" sizes="(min-width: 900px) 420px, 90vw" alt="Rosas sobre la barra frente a la pared con PANTÓN" width="600" height="800" loading="lazy" decoding="async"></figure>
     </div>
   </div>
 </section>
@@ -365,7 +365,7 @@
     <figure class="g g--arco"><img src="img/cervezas-600.webp" alt="Un mozo sirve una jarra de cerveza" width="600" height="750" loading="lazy" decoding="async"></figure>
     <figure class="g"><img src="img/pasarela-600.webp" alt="La pasarela del entrepiso del salón" width="600" height="461" loading="lazy" decoding="async"></figure>
     <figure class="g g--redonda"><img src="img/brindis-600.webp" alt="Copas de espumante para brindar" width="600" height="750" loading="lazy" decoding="async"></figure>
-    <figure class="g"><img src="img/rosas-600.webp" alt="Rosas sobre la barra frente a la pared con PANTÓN" width="600" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="g"><img src="img/pescado-crema-600.webp" alt="Pescado a la crema servido en cazuela" width="600" height="750" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -411,6 +411,6 @@
   <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
 </footer>
 
-<script type="module" src="js/app.js?v=1"></script>
+<script type="module" src="js/app.js?v=2"></script>
 </body>
 </html>

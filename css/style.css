@@ -146,8 +146,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ================= HERO A · EL CARTEL ================= */
 .hero { position: relative; height: 100vh; height: 100svh; min-height: 560px; display: flex; flex-direction: column; overflow: hidden; background: var(--noche); }
-.hero__foto { position: relative; flex: 1 1 auto; min-height: 0; max-height: 150vw; }
-.hero__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+.hero__foto { position: relative; flex: 1 1 auto; min-height: 0; max-height: 150vw; margin-top: calc(var(--barra) + env(safe-area-inset-top)); }
+.hero__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 .hero__foto::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 42%; background: linear-gradient(180deg, rgba(22,14,9,0), var(--noche) 94%); pointer-events: none; }
 .hero__txt { position: relative; z-index: 2; flex: none; padding: 0 var(--lado) calc(22px + env(safe-area-inset-bottom)); margin-top: -44px; display: flex; flex-direction: column; gap: 13px; }
 .estado { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; padding: 8px 14px 6px; border-radius: 999px; border: 1px solid rgba(224,178,90,.45); background: rgba(22,14,9,.55); font: 700 11.5px/1.3 var(--f-eti); letter-spacing: .14em; text-transform: uppercase; color: var(--cartel); }
@@ -168,7 +168,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (min-width: 600px) and (max-width: 899px) { .hero__foto { max-height: 70svh; } .hero__txt { max-width: 640px; } }
 @media (min-width: 900px) {
   .hero { flex-direction: row; align-items: stretch; }
-  .hero__foto { order: 2; flex: 0 0 min(58vw, 100svh, 980px); max-height: none; }
+  .hero__foto { order: 2; flex: 0 0 min(52vw, 80svh, 860px); max-height: none; margin-top: 0; }
   .hero__foto::after { top: 0; bottom: 0; left: -1px; right: auto; width: 9%; height: auto; background: linear-gradient(90deg, var(--noche), rgba(22,14,9,0)); }
   .hero__txt { order: 1; flex: 1 1 auto; margin: 0; padding: calc(var(--barra) + 20px) clamp(28px, 4vw, 60px) 40px max(var(--lado), calc((100vw - 1360px) / 2)); justify-content: center; gap: 24px; }
   .hero__t { font-size: clamp(64px, 6.6vw, 104px); line-height: .98; }
@@ -360,9 +360,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .mantel.sobre { box-shadow: 0 0 0 4px var(--rojo), var(--sombra); transform: scale(1.01); }
 .mantel__logo { width: min(64%, 300px); margin: 6px auto 0; opacity: .82; }
 .mantel__platos { position: relative; flex: 1; min-height: 210px; margin: 12px 0; }
-.mantel__plato { position: absolute; left: var(--x); top: var(--y); width: var(--s, 88px); height: var(--s, 88px); margin: calc(var(--s, 88px) / -2) 0 0 calc(var(--s, 88px) / -2); border-radius: 50%; border: 7px solid #2a211b; overflow: hidden; box-shadow: 0 10px 18px rgba(28,20,11,.28); animation: apoya .55s cubic-bezier(.3, 1.5, .5, 1) both; }
+.mantel__plato { position: absolute; left: var(--x); top: var(--y); width: var(--s, 88px); height: var(--s, 88px); margin: calc(var(--s, 88px) / -2) 0 0 calc(var(--s, 88px) / -2); animation: apoya .55s cubic-bezier(.3, 1.5, .5, 1) both; }
+.mantel__foto { width: 100%; height: 100%; border-radius: 50%; border: 7px solid #2a211b; overflow: hidden; box-shadow: 0 10px 18px rgba(28,20,11,.28); }
 .mantel__plato img { width: 100%; height: 100%; object-fit: cover; }
-.mantel__plato b { position: absolute; right: 2px; bottom: 2px; min-width: 24px; height: 24px; border-radius: 12px; background: var(--rojo); color: #fff; font: 700 12px/24px var(--f-eti); text-align: center; }
+.mantel__plato b { position: absolute; z-index: 2; right: -6px; top: -6px; box-shadow: 0 0 0 3px #f6eedd; min-width: 24px; height: 24px; border-radius: 12px; background: var(--rojo); color: #fff; font: 700 12px/24px var(--f-eti); text-align: center; }
 @keyframes apoya { from { transform: translateY(-40px) scale(1.25) rotate(-12deg); opacity: 0; } 60% { opacity: 1; } }
 .mantel__vacio { position: absolute; left: 24px; right: 24px; top: 50%; transform: translateY(-50%); text-align: center; font-style: italic; color: var(--tinta-2); }
 .mantel__pie { position: relative; display: flex; flex-direction: column; gap: 12px; border-top: 1px dashed var(--oro); padding-top: 16px; }
@@ -414,9 +415,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .paso { padding: 86px 28px 30px; min-height: 250px; }
   .paso__n { left: 28px; top: 26px; }
   .paso h3 { font-size: 28px; }
-  .paso:nth-child(2) { transform: translateY(26px); }
-  .js .paso.reveal:nth-child(2) { transform: translateY(50px); }
-  .js .paso.reveal.visto:nth-child(2) { transform: translateY(26px); }
 }
 
 /* ================= HISTORIA · RUTA ================= */

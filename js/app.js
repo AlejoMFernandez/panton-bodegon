@@ -305,7 +305,7 @@ function pintarMantel(animar = true) {
   const porId = {}; ls.forEach(l => { porId[l.id] = (porId[l.id] || 0) + l.cant; });
   const ids = Object.keys(porId).slice(0, SLOTS.length);
   const ya = new Set($$('.mantel__plato', box).map(x => x.dataset.id));
-  box.innerHTML = ids.map((id, i) => { const p = prod(id); const [x, y] = SLOTS[i]; return `<div class="mantel__plato" data-id="${esc(id)}" style="--x:${x}%;--y:${y}%;--s:${desk.matches ? 104 : 80}px;${!animar || ya.has(id) ? 'animation:none' : ''}"><img src="${esc(K.asset(mini(p.foto)))}" alt="${esc(p.nombre)}" width="240" height="240">${porId[id] > 1 ? `<b>×${porId[id]}</b>` : ''}</div>`; }).join('');
+  box.innerHTML = ids.map((id, i) => { const p = prod(id); const [x, y] = SLOTS[i]; return `<div class="mantel__plato" data-id="${esc(id)}" style="--x:${x}%;--y:${y}%;--s:${desk.matches ? 104 : 80}px;${!animar || ya.has(id) ? 'animation:none' : ''}"><div class="mantel__foto"><img src="${esc(K.asset(mini(p.foto)))}" alt="${esc(p.nombre)}" width="240" height="240"></div>${porId[id] > 1 ? `<b>×${porId[id]}</b>` : ''}</div>`; }).join('');
   const n = Object.values(porId).reduce((a, b) => a + b, 0);
   $('[data-mantel-vacio]').hidden = n > 0;
   $('[data-mantel-n]').textContent = n === 0 ? 'Mesa vacía' : `${n} ${n === 1 ? 'plato' : 'platos'} para el centro`;
